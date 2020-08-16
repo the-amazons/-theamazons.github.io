@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&family=Montserrat:wght@100&display=swap');
+
+        h1 {
+            text-align: center;
+            font-family: 'Biryani', sans-serif;
+        }
+
+        body {
+            background-color: #8a5416;
+            overflow: scroll;
+            color: white;
+            font-family:'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #b57b27;
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+
+        /* Style sidebar links */
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(70, 70, 70);
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: Papyrus;
+        }
+
+
+        /* Style links on mouse-over */
+        .sidebar a:hover {
+            color: white;
+        }
+
+        .sidebar a.active {
+            color: white;
+        }
+
+        /* Style the main content */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+
+        /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        .div {
+            margin-left: 700px;
+        }
+    </style>
+
+
+    <title> Meet the Amazons</title>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <a class="active" href="homeg.html"> Home</a>
+        <a href="amazonsg.html"> Meet the Amazons</a>
+        <a href="mythsg.html"> Myths of the Amazons</a>
+        <a href="allusiong.html">Allusions</a>
+        <a href="aboutg.html">About</a>
+        <a href="immersiveg.html">Themes</a>
+        <A href="gamesg.html">Games!</A>
+    </div>
+
+    <h1 style="text-align: center;">Home</h1>
+    <center><iframe src="https://bit.ly/3fHMYSP" style="width: 100vh; height: 75vh; vertical-align: middle;"></iframe>
+    </center>
+</body>
+<script>
+    window.onload = function () {
+        document.body.className = getTheme();
+    }
+</script>
+
+</html>

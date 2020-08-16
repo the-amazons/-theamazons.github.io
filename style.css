@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+
+body
+{
+    font-family: 'Arimo', sans-serif;
+    margin: 12px;
+    padding: 0;
+    overflow:scroll;
+}
+
+h1
+{
+    font-family: 'Biryani', sans-serif;
+    text-align: center;
+}
+
+.light
+{
+    color: black;
+    background: white;
+}
+
+.dark
+{
+    color: white;
+    background: black;
+}
+
+.red
+{
+    background-color: #681f28;
+    color: white;
+}
+
+.horizontalGrid
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    text-align: center;
+}
+
+section
+{
+    border-radius: 4px;
+    padding: 12px;
+}
+
+
+.light section
+{
+    background-color: gainsboro;
+}
+
+.dark section
+{
+    background-color: #333333;
+}
+
+.horizontalGrid div
+{
+    margin: 12px;
+}
+
+.horizontalGrid img
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 210px;
+}
+
+.formGrid
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    justify-content: stretch;
+    padding: 12px;
+}
+
+.formGrid button
+{
+    width: 100px;
+}
+
+input
+{
+    background: transparent;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #aaaaaa;
+    margin-bottom: 8px;
+}
+
+input:focus
+{
+    background-color: white;
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+textarea
+{
+    resize: vertical;
+    background: transparent;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #aaaaaa;
+    margin-bottom: 8px;
+    height: 25vh;
+}
+
+textarea:focus
+{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+    background-color: white;
+}
+
+.dark textarea:focus
+{
+    background-color: white;
+}
+
+.dark input:focus
+{
+    background-color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .horizontalGrid {
+        flex-direction: column;
+    }
+}
+
+.light .horizontalGrid{
+    background-color: gainsboro;
+}
+
+.dark .horizontalGrid{
+    background-color: #333333;
+}
+
+.light .formGrid{
+    background-color: gainsboro;
+}
+
+.dark .formGrid {
+    background-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: 'Mukta', sans-serif;
+}
+
+.submit
+{
+    border: 2px solid #bebbb8;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.submit:hover, 
+.submit:active
+{
+    box-shadow: 0 0 8px 0 dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.dark .submit
+{
+    color: white;
+}
+
+button.go-button {
+    background: transparent;
+    vertical-align: middle;
+    width: 12rem;
+    height: auto;
+    padding: 0;
+}
+
+button.go-button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.go-button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.go-button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.go-button .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.go-button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #e1dfdd;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+a
+{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #007af2;
+}

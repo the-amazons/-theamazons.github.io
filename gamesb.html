@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: rgb(70, 202, 241);
+            overflow:scroll;    
+            color: white;    
+          }
+
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(27, 169, 204);
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+
+        /* Style sidebar links */
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #1c6799;
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: Papyrus;
+        }
+
+
+        /* Style links on mouse-over */
+        .sidebar a:hover {
+            color: white;
+        }
+        .sidebar a.active {
+            color: white;
+        }
+
+        /* Style the main content */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+
+        /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+  
+        .card {
+            background-color: rgb(27, 169, 204);
+            margin-top: 10px;
+            margin-left: 200px;
+            width: fit-content;
+            font-size: 26px;
+            padding: 15px;
+            float: left;
+            font-weight: lighter;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .sidebar a.active{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <a href="homeb.html"> Home</a>
+        <a href="amazonb.html"> Meet the Amazons</a>
+        <a href="mythsb.html"> Myths of the Amazons</a>
+        <a href="allusionb.html">Allusions</a>
+        <a href="aboutb.html">About</a>
+        <a href="immersiveb.html">Themes</a>
+        <a class="active" href="gamesb.html">Games!</a>
+
+    </div>
+
+    <h1>Games and Trivias!</h1>
+    <iframe src="https://unpkg.com/svgedit@5.1.0/editor/svg-editor.html"
+        style="margin-left: 50px; width:900px; height: 700px;"></iframe>
+    <div class="card">
+        Hi! Love to Draw? Then this is the Game for You!<br>
+        Select any Scenario and Draw it out!
+        <ul style="list-style-type: none;">
+            <li>&#9672 Imagine you are a Amazon!<Br> What would your clothes look like?</li>
+            <li>&#9672 You are a greek citizen <br>amazed by the Amazon's Power!</li>
+            <li>&#9672 You are a newborn Amazon! <br> You are undergoing hard training!</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <Br>
+
+</body>
+
+</html>

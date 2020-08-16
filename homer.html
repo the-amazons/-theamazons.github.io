@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home - The Amazons</title>
+
+    <link rel="icon"
+    href="https://blogsofsolidrock.files.wordpress.com/2015/01/610px-amazone_staatliche_antikensammlungen_8953.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+    
+    
+    
+        h1 {
+            font-family: 'Rowdies', cursive;
+            text-align: center;
+            color: white;
+        }
+    
+        body {
+            background-color: #681f28;
+          overflow:scroll;        }
+    
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #bd2a3d;
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+    
+        /* Style sidebar links */
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #a1a1a1;
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: Papyrus;
+        }
+    
+    
+        /* Style links on mouse-over */
+        .sidebar a:hover {
+            color: white;
+        }
+    
+        .sidebar a.active {
+            color: white;
+        }
+    
+        /* Style the main content */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+    
+        /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+    
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+    
+
+<body>
+
+    <div class="sidebar">
+
+        <a class="active" href="homer.html"> Home</a>
+        <a href="amazonr.html"> Meet the Amazons</a>
+        <a href="mythsr.html"> Myths of the Amazons</a>
+        <a href="allusionr.html">Allusions</a>
+        <a href="aboutr.html">About</a>
+        <a href="immersiver.html">Themes</a>
+        <a href="gamesr.html">Games!</a>
+
+    </div>
+    <h1 style="text-align: center;">Home</h1>
+    <center><iframe src="https://bit.ly/3fHMYSP" style="width: 100vh; height: 75vh; vertical-align: middle;"></iframe>
+    </center>
+</body>
+<script>
+    window.onload = function () {
+        document.body.className = getTheme();
+    }
+</script>
+</body>
+
+</html>

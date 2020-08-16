@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+    href="https://blogsofsolidrock.files.wordpress.com/2015/01/610px-amazone_staatliche_antikensammlungen_8953.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&family=Montserrat:wght@100&display=swap');
+
+
+
+        h1 {
+            font-family: 'Biryani', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        body {
+            background-color: #681f28;
+            overflow: scroll;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100%;
+            margin: auto;
+            color: white;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #bd2a3d;
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+
+        /* Style sidebar links */
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #a1a1a1;
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: Papyrus;
+        }
+
+
+        /* Style links on mouse-over */
+        .sidebar a:hover {
+            color: white;
+        }
+
+        .sidebar a.active {
+            color: white;
+        }
+
+        /* Style the main content */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+
+        /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        input[type=text],
+        select {
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #681f28;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        input[type=submit] {
+            background-color: #681f28;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+
+        form {
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #bd2a3d;
+            margin-left: 190px;
+            margin-right: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+
+
+        }
+
+        textarea {
+            width: 20%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: #681f28;
+            resize: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        .team {
+            margin-left: 190px;
+            background-color: #bd2a3d;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            margin-right: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+<body>
+
+    <div class="sidebar">
+
+        <a href="homer.html"> Home</a>
+        <a href="amazonr.html"> Meet the Amazons</a>
+        <a href="mythsr.html"> Myths of the Amazons</a>
+        <a href="allusionr.html">Allusions</a>
+        <a class="active" href="aboutr.html">About</a>
+        <a href="immersiver.html">Themes</a>
+        <a href="gamesr.html">Games!</a>
+
+    </div>
+<H1>About us</H1>
+    <div class="team">
+        <h2 style="font-family: 'Biryani', sans-serif;">Meet the Team!</h2>
+        <h3>Emy Shivani</h3>
+        <img src="https://i.imgur.com/oFpSPje.jpg" width="200px" height="210px" style="border-radius: 100px;">
+        <h4>Hi! I am Emy Shivani, I love to make html websites!</h4>
+        <h3>Sahana S</h3>
+        <img src="https://i.imgur.com/tNBs4Md.jpg" width="200px" height="210px" style="border-radius: 100px;">
+        <h4>Hello!</h4>
+        <h3>Mahalaxmi</h3>
+        <img src="https://i.imgur.com/48anBGk.jpg" width="200px" height="210px" style="border-radius: 100px;">
+    </div>
+    <div>
+        <br>
+        <form>
+            <h3>Feedback</h3>
+            <p>Name</p> <input type="text" name="name">
+            <p>Email</p> <input type="text" name="email">
+            <p>Feedback and Suggestions</p><textarea name="message" rows="1" cols="6"></textarea><br />
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="team">
+        <div style="float: center; font-size: medium; font-family: 'Biryani', sans-serif;">
+            Version 1.0<br>
+            © Blockbuster Coporation<br>
+            Hosted on Github Pages.<Br>
+            Subscribe to our YouTube Channel<Br>
+        </div>
+        <div>
+            <h4>
+                References:
+            </h4>
+            <ol>
+                <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+                <li><a href="https://github.com/">Github Pages</a></li>
+                <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                <li><a href="https://imgur.com/upload">Imgur</a></li>
+                <li><a href="https://metroui.org.ua/">Metro 4 UI</a></li>
+                <li><a href="https://www.nationalgeographic.com/">National Geography</a></li>
+                <li><a href="https://www.ancient.eu/">Ancient Encylopedia</a></li>
+                <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+                <li><a href="https://github.com/SVG-Edit/svgedit">SVG Edit - Game</a></li>
+
+
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>

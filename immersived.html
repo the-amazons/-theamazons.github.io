@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Myths - The Amazons</title>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon"
+    href="https://blogsofsolidrock.files.wordpress.com/2015/01/610px-amazone_staatliche_antikensammlungen_8953.jpg">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+
+
+    h1 {
+        font-family: 'Rowdies', cursive;
+        text-align: center;
+        color: white;
+    }
+
+    body {
+        background-color: #000000;
+      overflow:scroll;    }
+
+    .sidebar {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #333333;
+        overflow-x: hidden;
+        padding-top: 16px;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #a1a1a1;
+        display: block;
+        margin: 10px;
+        border-radius: 10px;
+        font-family: Papyrus;
+    }
+
+
+    /* Style links on mouse-over */
+    .sidebar a:hover {
+        color: white;
+    }
+
+    .sidebar a.active {
+        color: white;
+    }
+
+    /* Style the main content */
+    .main {
+        margin-left: 160px;
+        /* Same as the width of the sidenav */
+        padding: 0px 10px;
+    }
+
+    /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {
+            padding-top: 15px;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+    }
+</style>
+
+
+<div class="sidebar">
+
+    <a href="homed.html"> Home</a>
+    <a href="amazond.html"> Meet the Amazons</a>
+    <a href="mythsd.html"> Myths of the Amazons</a>
+    <a href="allusiond.html">Allusions</a>
+    <a href="aboutd.html">About</a>
+    <a class="active"href="immersived.html">Themes</a>
+    <a href="gamesd.html">Games!</a>
+
+</div>
+
+<body style="overflow: hidden;">
+    <h1>Select your preffered Theme</h1>
+
+    <iframe style="width: 100%; height: 100vh; border: none; margin-left: 160px;" src="themesd.html"></iframe>
+</body>
+
+</html>

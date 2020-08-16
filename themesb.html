@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Themes - The Amazons</title>
+
+    <link rel="icon"
+    href="https://blogsofsolidrock.files.wordpress.com/2015/01/610px-amazone_staatliche_antikensammlungen_8953.jpg">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 20px;
+        background-color: rgb(70, 202, 241);
+    }
+</style>
+
+<body>
+    <div class="tiles-grid">
+        <div data-role="tile" data-size="large" class="bg-red" onclick="goToPage('homeb.html')" data-cover="https://i.imgur.com/Z1fsqX1.png">
+            <span class="branding-bar">Blue Theme</span>
+        </div>
+        <div data-role="tile" data-size="large" class="bg-red" onclick="goToPage('homed.html')" data-cover="https://i.imgur.com/SyVPMRs.png">
+            <span class="branding-bar">Dark Theme</span>
+        </div>
+        <div data-role="tile" data-size="large" class="bg-red" onclick="goToPage('homeg.html')" data-cover="https://i.imgur.com/Ek6zbzW.png">
+            <span class="branding-bar">Gold Theme</span>
+        </div>
+        <div data-role="tile" data-size="large" class="bg-red" onclick="goToPage('home.html')" data-cover="https://i.imgur.com/jFhtlLR.png">
+            <span class="branding-bar">Light Theme</span>
+        </div>
+        <div data-role="tile" data-size="large" class="bg-red" onclick="goToPage('homer.html')" data-cover="https://i.imgur.com/wEm12tv.png">
+            <span class="branding-bar">Red Theme</span>
+        </div>
+    </div>
+</body>
+<script>
+    function goToPage(pageLink) {
+        window.top.location.href = pageLink;
+    }
+</script>
+
+</html>

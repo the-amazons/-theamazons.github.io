@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About - The Amazons</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="theming.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body class="light">
+    <h1 style="text-align: center;">About us</h1>
+    <h2>Meet the team</h2>
+    <div class="horizontalGrid">
+        <div>
+            <img src="https://i.imgur.com/oFpSPje.jpg">
+            <h3>Emy Shivani</h3>
+        </div>
+        <div>
+            <img src="https://i.imgur.com/tNBs4Md.jpg">
+            <h3>Sahana S</h3>
+        </div>
+        <div>
+            <img src="https://i.imgur.com/48anBGk.jpg">
+            <h3>Mahalaxmi Kumaran</h3>
+        </div>
+    </div>
+    <h2>Feedback</h2>
+    <div class="formGrid">
+        <p>Your feedback is required to improve this site!</p>
+        <label for="namebox">What's your name?</label>
+        <input id="namebox" placeholder="Your name" type="text">
+        <label for="mailbox">What's your email address? (We'll use this to contact you if necessary)</label>
+        <input id="mailbox" placeholder="Your email" type="email">
+        <label for="commentBox">Your comments</label>
+        <textarea id="commentBox" placeholder="Have something else?"></textarea>
+        <button class="submit" onclick="sendFeedback();">Submit</button>
+    </div>
+    <h2>Version info</h2>
+    <section>
+        <p>Version 1.0</p>
+        <p>© 2020 JUV Studios & Blockbuster Coporation. All rights reserved.</p>
+        <p>Hosted on <a target="_blank" rel="noopener noreferrer" href="https://pages.github.com/">GitHub Pages</a>.</p>
+        <a>Subscribe to our YouTube channel</a><br>
+    </section>
+    <h2>References</h2>
+    <section>
+        <ol>
+            <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+            <li><a href="https://github.com/">Github Pages</a></li>
+            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+            <li><a href="https://imgur.com/upload">Imgur</a></li>
+            <li><a href="https://metroui.org.ua/">Metro 4 UI</a></li>
+            <li><a href="https://www.nationalgeographic.com/">National Geography</a></li>
+            <li><a href="https://www.ancient.eu/">Ancient Encylopedia</a></li>
+            <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+            <li><a href="https://github.com/SVG-Edit/svgedit">SVG Edit - Game</a></li>
+        </ol>
+    </section>
+</body>
+
+<script>
+    function sendFeedback() {
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "mahalaxmi.kumaran2008@gmail.com",
+            Password: "FF0E772F1938080547F0FACE8B3A02190340",
+            To: ['mahalaxmi.kumaran2008@gmail.com', 'jaiganeshhouse@yahoo.com'],
+            From: "mahalaxmi.kumaran2008@gmail.com",
+            Subject: "Feedback form for website",
+            Body: `Name: ${document.getElementById('namebox').value}\nEmail: ${document.getElementById('mailbox').value}\nComments: ${document.getElementById('commentBox').value}`
+        }).then(
+            message => {
+                if (message == "OK")
+                {
+                    alert("Thank you for sending feedback!");
+                }
+                else
+                {
+                    alert("Sorry, we could not submit your feedback.")
+                }
+            }
+        );
+
+    }
+</script>
+
+<script>
+    window.onload = function()
+    {
+        document.body.className = getTheme();
+    }
+    
+</script>
+
+</html>

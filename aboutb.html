@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About - The Amazons</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+    href="https://blogsofsolidrock.files.wordpress.com/2015/01/610px-amazone_staatliche_antikensammlungen_8953.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&family=Montserrat:wght@100&display=swap');
+    
+    
+    
+        h1 {
+            font-family: 'Rowdies', cursive;
+            text-align: center;
+            color: white;
+        }
+    
+        body {
+            background-color: rgb(70, 202, 241);
+            overflow: scroll;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(27, 169, 204);
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+    
+        /* Style sidebar links */
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #1c6799;
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: Papyrus;
+        }
+    
+    
+        /* Style links on mouse-over */
+        .sidebar a:hover {
+            color: white;
+        }
+    
+        .sidebar a.active {
+            color: white;
+        }
+    
+        /* Style the main content */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+    
+        /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+    
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+        
+        input[type=text],
+        select {
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: rgb(70, 202, 241) ;
+            color: white;
+
+
+        }
+
+        input[type=submit] {
+            background-color: rgb(70, 202, 241) ;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: black 1px solid;
+        }
+
+
+        form {
+            border-radius: 5px;
+            padding: 20px;
+            background-color: rgb(27, 169, 204);
+            margin-left: 190px;
+            margin-right: 50px;
+
+        }
+
+        textarea {
+            width: 20%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color:rgb(70, 202, 241);
+            resize: none;
+            color: white;
+            border: black 1px solid;
+
+        }
+
+        .team {
+            margin-left: 190px;
+            background-color: rgb(27, 169, 204);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            margin-right: 50px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    
+
+<body>
+
+    <div class="sidebar">
+
+        <a href="homeb.html"> Home</a>
+        <a href="amazonb.html"> Meet the Amazons</a>
+        <a href="mythsb.html"> Myths of the Amazons</a>
+        <a href="allusionb.html">Allusions</a>
+        <a class="active" href="aboutb.html">About</a>
+        <a href="immersiveb.html">Themes</a>
+        <a href="gamesb.html">Games!</a>
+    </div>    <iframe style="width:90%; height: 100vh; border: none; margin-left: 160px;" src="frameb.html"></iframe>
+
+</body>
+
+</html>

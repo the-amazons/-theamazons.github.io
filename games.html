@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&family=Montserrat:wght@100&display=swap');
+
+        body {
+            background-color: white;
+            overflow: scroll;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: gainsboro;
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+   
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            margin: 10px;
+            border-radius: 10px;
+            font-family: Papyrus;
+        }
+
+
+        .sidebar a:hover {
+            color: black;
+        }
+
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        .card {
+            background-color: gainsboro;
+            margin-top: 10px;
+            margin-left: 200px;
+            width: fit-content;
+            font-size: 26px;
+            padding: 15px;
+            float: left;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Biryani', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <a href="home.html"> Home</a>
+        <a href="amazon.html"> Meet the Amazons</a>
+        <a href="myths.html"> Myths of the Amazons</a>
+        <a href="allusion.html">Allusions</a>
+        <a href="about.html">About</a>
+        <a href="immersive.html">Themes</a>
+        <a style="color: black;" href="games.html">Games!</a>
+
+    </div>
+
+    <h1>Games and Trivias!</h1>
+    <iframe src="https://unpkg.com/svgedit@5.1.0/editor/svg-editor.html"
+        style="margin-left: 50px; width:900px; height: 700px;"></iframe>
+    <div class="card">
+        Hi! Love to Draw? Then this is the Game for You!<br>
+        Select any Scenario and Draw it out!
+        <ul style="list-style-type: none;">
+            <li>&#9672 Imagine you are a Amazon!<Br> What would your clothes look like?</li>
+            <li>&#9672 You are a greek citizen <br>amazed by the Amazon's Power!</li>
+            <li>&#9672 You are a newborn Amazon! <br> You are undergoing hard training!</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
